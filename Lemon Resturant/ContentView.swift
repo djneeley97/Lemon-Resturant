@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack {
-                Image("littlelemonlogo")
+                Image("littleLemonLogo")
                 Image(systemName: "keyboard")
                     .imageScale(.large)
                     .foregroundStyle(.gray)

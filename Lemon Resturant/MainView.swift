@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var isLoggedIn = true
+    @State private var userName = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            if isLoggedIn == true {
+                VStack {
+                    Text("Welcome, \(userName)")
+                        .font(.title)
+                    
+                    NavigationLink("About Us", destination: AboutView())
+                    
+                    Button("Logout") {
+                        // todo
+                        isLoggedIn = false
+                        userName = ""
+                    }
+                }
+                
+            } else {
+                LoginView(isLoggedIn: $isLoggedIn, userName: $userName)
+            }
+        }
     }
 }
 

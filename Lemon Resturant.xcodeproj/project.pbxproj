@@ -29,14 +29,30 @@
 		7F7BC2152E6FBB8500FC547E /* Lemon ResturantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lemon ResturantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7F2A5E142E6FBEAD00FB70D2 /* Practice */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Practice;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7FBD48652E726B75001D1FE4 /* Exceptions for "Lemon Resturant" folder in "Lemon ResturantTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ReservationForm.swift,
+			);
+			target = 7F7BC20A2E6FBB8500FC547E /* Lemon ResturantTests */;
 		};
+		7FBD48662E726B75001D1FE4 /* Exceptions for "Lemon Resturant" folder in "Lemon ResturantUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ReservationForm.swift,
+			);
+			target = 7F7BC2142E6FBB8500FC547E /* Lemon ResturantUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		7F7BC2002E6FBB8400FC547E /* Lemon Resturant */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7FBD48652E726B75001D1FE4 /* Exceptions for "Lemon Resturant" folder in "Lemon ResturantTests" target */,
+				7FBD48662E726B75001D1FE4 /* Exceptions for "Lemon Resturant" folder in "Lemon ResturantUITests" target */,
+			);
 			path = "Lemon Resturant";
 			sourceTree = "<group>";
 		};
@@ -48,6 +64,11 @@
 		7F7BC2182E6FBB8500FC547E /* Lemon ResturantUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Lemon ResturantUITests";
+			sourceTree = "<group>";
+		};
+		7FBD485E2E7252C7001D1FE4 /* Practice */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,11 +101,11 @@
 		7F7BC1F52E6FBB8400FC547E = {
 			isa = PBXGroup;
 			children = (
+				7FBD485E2E7252C7001D1FE4 /* Practice */,
 				7F7BC2002E6FBB8400FC547E /* Lemon Resturant */,
 				7F7BC20E2E6FBB8500FC547E /* Lemon ResturantTests */,
 				7F7BC2182E6FBB8500FC547E /* Lemon ResturantUITests */,
 				7F7BC1FF2E6FBB8400FC547E /* Products */,
-				7F2A5E142E6FBEAD00FB70D2 /* Practice */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,8 +135,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7F2A5E142E6FBEAD00FB70D2 /* Practice */,
 				7F7BC2002E6FBB8400FC547E /* Lemon Resturant */,
+				7FBD485E2E7252C7001D1FE4 /* Practice */,
 			);
 			name = "Lemon Resturant";
 			packageProductDependencies = (

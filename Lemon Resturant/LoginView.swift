@@ -8,11 +8,35 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Binding var isLoggedIn:Bool
+    @Binding var userName:String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Image("littleLemonLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .padding(10)
+                
+                TextField("Enter your name", text: $userName)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                
+                Button("Log In"){
+                    print("Trying to log in")
+                    
+                    if userName == "Daniel" {
+                        isLoggedIn = true
+                    }
+                }
+            }
+            .navigationTitle("Login")
+        }
     }
 }
 
-#Preview {
-    LoginView()
-}
+//#Preview {
+//   LoginView()
+//}
